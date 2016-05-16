@@ -2,7 +2,7 @@ var FileStreamRotator = require('file-stream-rotator');
 var fs = require('fs');
 var morgan = require('morgan')
 
-var logDirectory = __dirname + '../../log'
+var logDirectory = __dirname + '/../log'
 
 // ensure log directory exists
 fs.existsSync(logDirectory) || fs.mkdirSync(logDirectory)

@@ -1,0 +1,20 @@
+{
+  "name": "notesApp",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://github.com/testForge/nodeJS_test_task",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "/public/javascripts/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.5.5",
+    "jquery": "^2.2.3",
+    "bootstrap": "^3.3.6"
+  }
+}
