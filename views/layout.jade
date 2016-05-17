@@ -1,12 +1,12 @@
 doctype html
-html
+html(ng-app='notesApp')
   head
     title= title
-    link(rel='stylesheet', href='/vendor/bootstrap/dist/css/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
 
 
-    script(src='/vendor/requirejs/require.js', data-main='javascripts/app')
+    script(src='javascripts/require.js', data-main='javascripts/application')
   body
     div.container-fluid
       div.header

@@ -1,3 +1,5 @@
-/**
- * Created by yellow on 5/17/16.
- */
+define('app',['jquery', 'angular'], function($){
+	window.app = angular.module('notesApp', {});
+
+	return {};
+})

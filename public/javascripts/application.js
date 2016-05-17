@@ -1,8 +1,7 @@
 require([
 	"jquery",
-	"angular"
+	"angular",
+	"app"
 ], function($){
-
+	app = angular.module("notesApp", []);
 });
-
-console.log(123123)
