@@ -1,5 +1,3 @@
-require(["/vendor/jquery/dist/jquery.js"], function($){
-	console.log($('body'))
-})
-
-console.log(123123)
+/**
+ * Created by yellow on 5/17/16.
+ */
