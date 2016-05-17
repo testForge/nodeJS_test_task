@@ -5,6 +5,6 @@
 		"style.sass",
 		"_variables.sass"
 	],
-	"mappings": "AAEA,AAAA,IAAI,CAAC;EACH,OAAO,EAAE,IAAK;EACd,IAAI,EAAE,kDAAmD,GAAG;;AAE9D,AAAA,CAAC,CAAC;EACA,KAAK,ECLS,OAAO,GDKG",
+	"mappings": "AAEA,AAAA,IAAI,CAAC;EACH,IAAI,EAAE,kDAAmD,GAAG",
 	"names": []
 }

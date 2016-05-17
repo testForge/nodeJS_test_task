@@ -4,5 +4,14 @@ html
     title= title
     link(rel='stylesheet', href='/vendor/bootstrap/dist/css/bootstrap.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+
+
+    script(src='/vendor/requirejs/require.js', data-main='javascripts/app')
   body
-    block content
+    div.container-fluid
+      div.header
+        block header
+      div.content
+        block content
+      div.footer
+        block footer
