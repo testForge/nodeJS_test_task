@@ -1,14 +1,14 @@
 doctype html
-html(ng-app='notesApp')
+html(ng-module="app")
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/bootstrap.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
 
 
-    script(src='javascripts/require.js', data-main='javascripts/application')
-  body
-    div.container-fluid
+    script(src='javascripts/lib/require.js', data-main='javascripts/main')
+  body(ng-controller="notesController")
+    div.container-fluid {{title}}
       div.header
         block header
       div.content

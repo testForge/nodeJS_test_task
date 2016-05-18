@@ -1,5 +1,3 @@
-define('app',['jquery', 'angular'], function($){
-	window.app = angular.module('notesApp', {});
-
-	return {};
-})
+define(['angular', 'modules/notes'], function(){
+	angular.module('app', ['notes.module']);
+});
