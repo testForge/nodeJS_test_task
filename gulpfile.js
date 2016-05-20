@@ -32,6 +32,6 @@ gulp.task('bower_resolve_css', function(){
 
 gulp.task('splice_locales', function(){
 	return gulp.src('./locales/*.json')
-		.pipe(merge_json("locales.json"))
+		// .pipe(merge_json("locales.json"))
 		.pipe(gulp.dest("./public/javascripts/data/locales/"));
 });

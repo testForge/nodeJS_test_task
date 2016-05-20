@@ -3,7 +3,8 @@ require.config({
 		"json": "lib/json",
 		"text": "lib/text",
 		"angular": "lib/angular",
-		"polyglot": "lib/polyglot"
+		"polyglot": "lib/polyglot",
+		"jquery": "lib/jquery"
 	},
 	baseUrl:"./javascripts"
 });

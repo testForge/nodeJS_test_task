@@ -1,12 +1,14 @@
 extends layout
 
-block header
-  ul.nav.nav-pills.nav-justified
-    li(role='presentation', class='active')
-      a(href='#') All notes
-    li(role='presentation')
-      a(href='#') #{__('title')}
-
 block content
-  div.col-sm-6
-  div.col-sm-6
+  div.row.col-xs-12(ng-show="isTabSet(0)")
+    div.jumbotron
+      h1 #{i18n.__("Greeteng")}
+      p #{i18n.__("App.Desciption")}
+
+  div.row.col-xs-12.all-notes(ng-show="isTabSet(1)", ng-cloak)
+    div.single-note(ng-repeat="note in allNotes")
+      div.panel.panel-primary
+        div.panel-heading {{note.id}}
+        div.panel-body {{note.title}}
+

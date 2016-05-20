@@ -7,10 +7,15 @@ html(ng-module="app")
 
 
     script(src='javascripts/lib/require.js', data-main='javascripts/main')
-  body(ng-controller="notesController")
-    div.container-fluid {{title}}
+  body
+    div.container-fluid(ng-controller="notesController")
       div.header
-        block header
+        div.row
+          ul.nav.nav-pills.nav-justified
+            li(role='presentation', ng-class="{active: isTabSet(1)}", ng-click="setTab(1)")
+              a(href='#', ng-click="getAllNotes($event)") #{i18n.__("All notes")}
+            li(role='presentation', ng-class="{active: isTabSet(2)}", ng-click="setTab(2)")
+              a(href='#') #{i18n.__("Create note")}
       div.content
         block content
       div.footer

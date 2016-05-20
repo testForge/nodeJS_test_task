@@ -16,6 +16,6 @@ module.exports = function(app){
     app.use(node_sass);
     app.use(express.static(path.join(__dirname, '/../public')));
     //locales middlewares
-    app.use([i18n.init]);
+    app.use(i18n.init);
     // app.use(i18n.middleware);
 };

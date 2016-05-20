@@ -1,4 +1,17 @@
 body {
+  background: url("../content/images/background.jpg") repeat-y;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+.header {
+  margin-bottom: 40px; }
+
+a {
+  color: #fff; }
+
+.all-notes {
+  padding: 20px; }
+
+.single-note {
+  padding-bottom: 20px; }
 
 /*# sourceMappingURL=style.css.map */

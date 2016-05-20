@@ -7,8 +7,8 @@ router.notesController = require('./notes');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.cookie("Lang","ru");
-  res.render('index');
+  res.cookie("Lang","en");
+  res.render('index', { i18n: res });
 });
 
 
